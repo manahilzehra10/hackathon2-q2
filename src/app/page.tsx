@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 import Hero from "./Hero/Hero"; // Update this line
 import Footer from "./Footer/page";
 import Header from "./Header/page";
