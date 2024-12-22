@@ -50,7 +50,7 @@ const ShoppingCart = () => {
     postalCode: "",
   });
 
-  const incrementQuantity = (id: any) => {
+  const incrementQuantity = (id: number) => {
     setCartItems((prevItems) =>
       prevItems.map((item) =>
         item.id === id ? { ...item, quantity: item.quantity + 1 } : item
@@ -58,7 +58,7 @@ const ShoppingCart = () => {
     );
   };
 
-  const decrementQuantity = (id: any) => {
+  const decrementQuantity = (id: number) => {
     setCartItems((prevItems) =>
       prevItems.map((item) =>
         item.id === id && item.quantity > 1
@@ -68,11 +68,11 @@ const ShoppingCart = () => {
     );
   };
 
-  const removeItem = (id: any) => {
-    setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
-  };
+  // const removeItem = (id: number) => {
+  //   setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
+  // };
 
-  const handleShippingChange = (e: any) => {
+  const handleShippingChange = (e: number) => {
     const { name, value } = e.target;
     setShippingDetails((prevDetails) => ({
       ...prevDetails,
