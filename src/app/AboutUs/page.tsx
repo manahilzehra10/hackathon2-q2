@@ -97,9 +97,9 @@ const AboutUs: React.FC = () => {
             </div>
             <blockquote className="ml-6 mr-6 bg-white rounded-lg shadow-lg p-8">
               <p className="text-lg text-gray-700">
-                "I have had an amazing experience shopping with this platform.
+                &quot I have had an amazing experience shopping with this platform.
                 Their customer service is top-notch, and the products are
-                always of excellent quality. Highly recommended!"
+                always of excellent quality. Highly recommended!&quot
               </p>
               <footer className="mt-4 text-gray-600 font-bold">- Fatima Khan</footer>
             </blockquote>
