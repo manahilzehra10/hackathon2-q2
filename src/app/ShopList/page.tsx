@@ -51,7 +51,7 @@ const ShopList: React.FC = () => {
   const [viewStyle, setViewStyle] = useState("grid");
 
   const renderStars = (rating: number) => {
-    let stars = [];
+    const stars = [];
     for (let i = 0; i < 5; i++) {
       stars.push(
         <span
