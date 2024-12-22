@@ -6,8 +6,8 @@ import Link from "next/link";
 function ErrorPage() {
   return (
     <div>
-      {/* <TopBar />
-      <Header/> */}
+      <TopBar />
+      <Header/> 
               <header className="bg-gray-100 py-6 sm:py-8 md:py-12 bg-cover bg-center relative">
           <div className="container mx-auto px-6 text-left">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900">
@@ -31,7 +31,7 @@ function ErrorPage() {
           </button>
         </Link>
       </div>
-      {/* <Footer /> */}
+     <Footer /> 
     </div>
   );
 }
