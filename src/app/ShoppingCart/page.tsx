@@ -72,13 +72,13 @@ const ShoppingCart = () => {
   //   setCartItems((prevItems) => prevItems.filter((item) => item.id !== id));
   // };
 
-  const handleShippingChange = (e: number) => {
-    const { name, value } = e.target;
-    setShippingDetails((prevDetails) => ({
-      ...prevDetails,
-      [name]: value,
-    }));
-  };
+const handleShippingChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const { name, value } = e.target;
+  setShippingDetails((prevDetails) => ({
+    ...prevDetails,
+    [name]: value,
+  }));
+};
 
   const totalPrice = cartItems.reduce(
     (acc, item) => acc + item.price * item.quantity,
